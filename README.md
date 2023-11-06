@@ -7,11 +7,11 @@
 ![image](./docs/assets/Teaser.png)
 **Figure:** *Face image editing controlled via style images and segmentation masks with SEAN*
 
-We propose semantic region-adaptive normalization (SEAN), a simple but effective building block for Generative Adversarial Networks conditioned on segmentation masks that describe the semantic regions in the desired output image. Using SEAN normalization, we can build a network architecture that can control the style of each semantic region individually, e.g., we can specify one style reference image per region. SEAN is better suited to encode, transfer, and synthesize style than the best previous method in terms of reconstruction quality, variability, and visual quality. We evaluate SEAN on multiple datasets and report better quantitative metrics (e.g. FID, PSNR) than the current state of the art. SEAN also pushes the frontier of interactive image editing. We can interactively edit images by changing segmentation masks or the style for any given region. We can also interpolate styles from two reference images per region.
+While current style transfer models have achieved impressive results for the application of artistic style to generic images, they face challenges in achieving photorealistic performances on indoor scenes, especially the ones represented by panoramic images.  Moreover, existing models overlook the unique characteristics of indoor panoramas, which possess particular geometry and semantic properties. To address these limitations, we propose the first geometry-aware and shading-independent, photorealistic and semantic style transfer method for indoor panoramic scenes. Our approach extends semantic-aware generative adversarial architecture capabilities by introducing two novel strategies to account the geometric characteristics of indoor scenes and to enhance performance. Firstly, we incorporate strong geometry losses that use layout and  depth inference at the training stage to enforce shape consistency between generated and ground truth scenes. Secondly, we apply a shading decomposition scheme to extract the albedo and normalized shading signal from the original scenes, and we apply the style transfer on albedo instead of full RGB images, thereby preventing shading-related bleeding issues. On top of that, we apply super-resolution to the resulting scenes to improve image quality and yield fine details. We evaluate our model's performance on public domain synthetic data sets. Our proposed architecture outperforms state-of-the-art style transfer models in terms of perceptual and accuracy metrics, achieving a 26.76\% lower ArtFID, a 6.95\% higher PSNR, and a 25.23\% higher SSIM. The visual results show that our method is effective in producing realistic and visually pleasing indoor scenes.
 
-> **SEAN: Image Synthesis with Semantic Region-Adaptive Normalization** <br>
-> Peihao Zhu, Rameen Abdal, Yipeng Qin, Peter Wonka <br>
-> *Computer Vision and Pattern Recognition **CVPR 2020, Oral***
+> **PanoStyle: Semantic, Geometry-Aware and Shading Independent Photorealistic Style Transfer for Indoor Panoramic Scenes** <br>
+> Tukur, M and Rehman, A Ur and Pintore, G and Gobbetti, E and Schneider, J and Agus, M <br>
+> *IEEE/CVF International Conference on Computer Vision **ICCV 2023***
 
 
 [[Paper](https://openaccess.thecvf.com/content/ICCV2023W/CVAAD/papers/Tukur_PanoStyle_Semantic_Geometry-Aware_and_Shading_Independent_Photorealistic_Style_Transfer_for_ICCVW_2023_paper.pdf)]
@@ -106,12 +106,12 @@ All rights reserved. Licensed under the [CC BY-NC-SA 4.0](https://creativecommon
 ## Citation
 If you use this code for your research, please cite our papers.
 ```
-@InProceedings{Zhu_2020_CVPR,
-author = {Zhu, Peihao and Abdal, Rameen and Qin, Yipeng and Wonka, Peter},
-title = {SEAN: Image Synthesis With Semantic Region-Adaptive Normalization},
-booktitle = {IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
-month = {June},
-year = {2020}
+@inproceedings{tukur2023panostyle,
+  title={PanoStyle: Semantic, Geometry-Aware and Shading Independent Photorealistic Style Transfer for Indoor Panoramic Scenes},
+  author={Tukur, M and Rehman, A Ur and Pintore, G and Gobbetti, E and Schneider, J and Agus, M},
+  booktitle={Proceedings of the IEEE/CVF International Conference on Computer Vision},
+  pages={1553--1564},
+  year={2023}
 }
 ```
 
