@@ -18,7 +18,7 @@ While current style transfer models have achieved impressive results for the app
 [[Project Page](https://github.com/abumuzzammil90/PanoStyle)]
 [[Demo](https://www.youtube.com/watch?v=yxTG1GfW5cE&t=2s)]
 
-
+<!-- 
 ## Installation
 
 Clone this repo.
