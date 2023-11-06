@@ -23,7 +23,7 @@ While current style transfer models have achieved impressive results for the app
 Clone this repo.
 ```bash
 Under Construction..
-Please check later. 
+Please check back later. 
 ```
 
 <!--
