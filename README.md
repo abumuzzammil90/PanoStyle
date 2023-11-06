@@ -14,7 +14,7 @@ We propose semantic region-adaptive normalization (SEAN), a simple but effective
 > *Computer Vision and Pattern Recognition **CVPR 2020, Oral***
 
 
-[[Paper](https://openaccess.thecvf.com/content/ICCV2023W/CVAAD/papers/Tukur_PanoStyle_Semantic_Geometry-Aware_and_Shading_Independent_Photorealistic_Style_Transfer_for_ICCVW_2023_paper.pdf]
+[[Paper](https://openaccess.thecvf.com/content/ICCV2023W/CVAAD/papers/Tukur_PanoStyle_Semantic_Geometry-Aware_and_Shading_Independent_Photorealistic_Style_Transfer_for_ICCVW_2023_paper.pdf)]
 
 [[Project Page](https://github.com/abumuzzammil90/PanoStyle)]
 
